@@ -1,4 +1,5 @@
-# SOP 2: 3D Protein Structure Visualization
+# SOP 2: 3D Protein Structure Visualization 
+# #JustLookAtMe!
 
 Once you have your target protein, inspecting its 3D structure helps you see where alpha-helices, beta-sheets, and potential drug-binding pockets actually sit in space—and whether a mutation is buried in the core or right on the active site.
 
