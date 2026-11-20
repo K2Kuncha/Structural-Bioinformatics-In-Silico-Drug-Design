@@ -19,9 +19,12 @@ Instead of clicking through the browser, you can pull a reviewed FASTA sequence 
 
 ```bash
 curl -s "[https://rest.uniprot.org/uniprotkb/P04637.fasta](https://rest.uniprot.org/uniprotkb/P04637.fasta)" -o P04637.fasta
+```
 
 ### 3. Handling Mutations & Disease Variants
 If you are modeling a specific genetic variant or studying how a mutation alters protein structure:
 * **Nucleotide-level changes (indels, frameshifts, or complex variants):** Grab the coding sequence (CDS) from NCBI RefSeq, introduce the base change(s) directly, and translate the mutated DNA into an amino acid sequence (using a tool like **ExPASy Translate** or a quick Biopython script) before moving to modeling.
 * **Simple missense mutations:** You can edit the target residue directly in the canonical protein FASTA file (e.g., swapping `R` to `H` at the affected position) and save it as a separate `mutant.fasta` file to compare against the wild-type model.
 * *Quick tip:* Always double-check your residue numbering against the canonical UniProt sequence—PDB crystal structures sometimes omit signal peptides or disordered N-terminal regions, which can shift the numbering.
+
+I hope you bind to the right target despite the SNPs!
